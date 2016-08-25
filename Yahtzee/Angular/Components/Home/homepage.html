@@ -1,0 +1,18 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-sm-10 home-section">
+            <h3> Welcome to Yahtzee! </h3>
+            <p> The game consists of 13 rounds. In each round, you roll the dice and then score the roll in one of 13 categories. You must score once in each category -- which means that towards the end of the game you may have to settle for scoring zero in some categories. The score is determined by a different rule for each category.</p>
+            <p>
+                For a full explanation of the game please go to <a href="http://grail.sourceforge.net/demo/yahtzee/rules.html">here</a>
+            </p>
+            <h4 ng-if="$ctrl.isLoggedIn()">Head over to your headquarters to start playing!</h4>
+            <h4 ng-if="!$ctrl.isLoggedIn()">Log in to start playing! If you don't have an account go and register it now! </h4>
+        </div>
+        <div class="col-sm-2">
+            <img class="yahtzee-logo" src="http://a5.mzstatic.com/eu/r30/Purple18/v4/0a/57/c2/0a57c2a3-f763-4be6-ba44-368e39647789/icon175x175.png" />
+        </div>
+    </div>
+
+</div>
+

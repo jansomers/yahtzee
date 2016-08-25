@@ -1,0 +1,41 @@
+﻿<div class="container no-margin col-sm-12">
+    <div class="row">
+        <div class="col-sm-6">
+            <ul class="nav navbar-nav nav-pills pull-left">
+                <li ng-class="{ active : $ctrl.isUserSectionShown}"><a class="navbar-link" href ng-click="$ctrl.isUserSectionShown = !$ctrl.isUserSectionShown"><i class="mdi mdi-24px mdi-account-box-outline"/></a></li>
+                <li ng-class="{ active : $ctrl.isPlaySectionShown}"><a class="navbar-link" href ng-click="$ctrl.isPlaySectionShown = !$ctrl.isPlaySectionShown"><i class="mdi mdi-24px mdi-new-box"/></a></li>
+                <li ng-class="{ active : $ctrl.isGamesSectionShown}"><a class="navbar-link" href ng-click="$ctrl.isGamesSectionShown = !$ctrl.isGamesSectionShown"><i class="mdi mdi-24px mdi-view-list"></i></a></li>
+                <li ng-class="{ active :  $ctrl.isLoadedSectionShown}"><a class="navbar-link" href ng-click="$ctrl.isLoadedSectionShown = !$ctrl.isLoadedSectionShown"><i class="mdi mdi-24px mdi-gamepad-variant"></i></a></li>
+            </ul>
+        </div>
+        <div class="col-sm-6 pull-right">
+            <p id="logas" class="nav-padding pull-right"><span class="stats">Hi {{$ctrl.getFullUser().screenName}}</span> <span class="stats">#Wins: {{$ctrl.wonGames()}}</span> <span class="stats">Best score: {{$ctrl.bestScore()}}</span> <span class="stats">Average: {{$ctrl.avgScore()}}</span></p>
+        </div>
+    </div>
+</div>
+
+<h3 ng-show="$ctrl.noSectionsShown()"> You unselected all filters: to open the section again click on the filters above this text</h3>
+
+<div class="row top-margin">
+    <div class="col-md-12">
+        <loaded-section ng-show="$ctrl.isLoadedSectionShown && $ctrl.shouldShowLoaded()" class="row"></loaded-section>
+    </div>
+</div>
+
+<div class="row top-margin">
+    <div class="col-md-12">
+        <games-section loaded-game="$ctrl.loadedGame()" ng-show="$ctrl.isGamesSectionShown" class="row"></games-section>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 top-margin">
+        <play-section class="play-section" ng-show="$ctrl.isPlaySectionShown" class="row"></play-section>
+    </div>
+    <div class="col-md-6 top-margin">
+        <user-section class="user-section" ng-show="$ctrl.isUserSectionShown" class="row"></user-section>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,165 @@
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\roslyn\csc.exe
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\roslyn\Microsoft.CodeAnalysis.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\roslyn\Microsoft.CSharp.Core.targets
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\roslyn\Microsoft.VisualBasic.Core.targets
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\roslyn\System.Collections.Immutable.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\roslyn\System.Reflection.Metadata.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\roslyn\vbc.exe
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\roslyn\VBCSCompiler.exe
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\roslyn\VBCSCompiler.exe.config
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Yahtzee.dll.config
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Yahtzee.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Yahtzee.pdb
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Antlr3.Runtime.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\EntityFramework.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\EntityFramework.SqlServer.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.AspNet.Identity.Core.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.AspNet.Identity.Owin.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.Owin.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.Owin.Host.SystemWeb.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.Cookies.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.Facebook.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.Google.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.OAuth.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.Twitter.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.Web.Infrastructure.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Newtonsoft.Json.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Owin.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Net.Http.Formatting.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Web.Helpers.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Web.Http.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Web.Http.Owin.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Web.Http.WebHost.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Web.Mvc.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Web.Optimization.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Web.Razor.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Web.WebPages.Deployment.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Web.WebPages.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Web.WebPages.Razor.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\WebGrease.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Newtonsoft.Json.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Net.Http.Formatting.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Web.Helpers.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Web.Http.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Web.Http.WebHost.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Web.Mvc.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Web.Optimization.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Web.Razor.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Web.WebPages.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Web.WebPages.Deployment.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Web.WebPages.Razor.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Antlr3.Runtime.pdb
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\EntityFramework.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\EntityFramework.SqlServer.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.AspNet.Identity.Core.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.AspNet.Identity.Owin.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.Owin.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.Owin.Host.SystemWeb.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.Facebook.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.Cookies.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.OAuth.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.Google.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.Twitter.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\bin\System.Web.Http.Owin.xml
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\obj\Debug\Yahtzee.csprojResolveAssemblyReference.cache
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\obj\Debug\Yahtzee.dll
+\\Mac\Home\Documents\Visual Studio 2015\Projects\Yahtzee\Yahtzee\obj\Debug\Yahtzee.pdb
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\roslyn\csc.exe
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\roslyn\vbc.exe
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\roslyn\VBCSCompiler.exe
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Yahtzee.dll.config
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Yahtzee.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Yahtzee.pdb
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Antlr3.Runtime.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\EntityFramework.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\EntityFramework.SqlServer.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.Owin.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Newtonsoft.Json.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Owin.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Net.Http.Formatting.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Web.Helpers.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Web.Http.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Web.Http.Owin.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Web.Http.WebHost.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Web.Mvc.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Web.Optimization.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Web.Razor.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Web.WebPages.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Web.WebPages.Razor.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\WebGrease.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Newtonsoft.Json.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Net.Http.Formatting.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Web.Helpers.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Web.Http.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Web.Http.WebHost.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Web.Mvc.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Web.Optimization.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Web.Razor.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Web.WebPages.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Web.WebPages.Razor.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Antlr3.Runtime.pdb
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\EntityFramework.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\EntityFramework.SqlServer.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.Owin.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\System.Web.Http.Owin.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\obj\Debug\Yahtzee.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\obj\Debug\Yahtzee.pdb
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\log4net.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\log4net.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\obj\Debug\Yahtzee.csprojResolveAssemblyReference.cache
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\obj\Debug\Yahtzee.Migrations.InitialCreate.resources
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\obj\Debug\Yahtzee.csproj.GenerateResource.Cache
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.AspNet.SignalR.Client.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\bin\Microsoft.AspNet.SignalR.Client.xml
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\Yahtzee\obj\Debug\Yahtzee.Migrations.Test.resources

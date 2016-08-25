@@ -1,0 +1,44 @@
+﻿<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" ng-init="tab = 1">
+            <ul class="nav navbar-nav navbar-left">
+                <li> <a href ng-click="$ctrl.setTab(1)">Yahtzee</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href ng-click="$ctrl.setTab(2)" ng-if="!$ctrl.isLoggedin()">Register</a></li>
+                <li><a href ng-click="$ctrl.setTab(3)" ng-if="!$ctrl.isLoggedin()">Login</a></li>
+                <li><a href ng-click="$ctrl.setTab(4)" ng-if="$ctrl.isLoggedin()">Headquarters</a></li>
+                <li><a href ng-click="$ctrl.logout()" ng-if="$ctrl.isLoggedin()">Logout</a></li>
+            </ul>
+            <div class="nav navbar-nav navbar-right">
+                <img class="avatar" ng-src="{{$ctrl.getFullUser().avatar}}" ng-if="$ctrl.isLoggedin()" />
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div class="container body-content">
+    <homepage class="top-margin" ng-show="$ctrl.isSet(1)"></homepage>
+    <register class="top-margin" ng-show="$ctrl.isSet(2)"></register>
+    <login class="top-margin" ng-show="$ctrl.isSet(3)"></login>
+    <profile ng-show="$ctrl.isSet(4)"></profile>
+
+    <footer class="footer hide-tablet">
+        <hr />
+        <p>Yahtzee project made by Jan Somers. Backend: ASP.NET and SQL server. Front-end: AngularJS, HTML CSS(Bootstrap 3 + MaterialDesignIcons) Example testing (Coded UI & CSHARP testing)</p>
+    </footer>
+</div>
+
+
+
+

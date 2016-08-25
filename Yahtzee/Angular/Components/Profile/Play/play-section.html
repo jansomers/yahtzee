@@ -1,0 +1,42 @@
+﻿<div class="container play-section section-padding">
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>New Game: </h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="bot-padding col-sm-12">
+                    <p>Ready for a new Challenge?</p>
+                    <p>Send them an invitation</p>
+                    <div class="dropdown bottom-left">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                            Challenge a friend<span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" ng-repeat="friend in $ctrl.getFullUser().friends">
+                            <li ng-if="friend.ScreenName == null" class="friend-option" ng-click="$ctrl.selectFriend(friend.Email)">
+                                {{friend.Email}}
+                            </li>
+                            <li ng-if="friend.ScreenName != null" class="friend-option" ng-click="$ctrl.selectFriend(friend.Email)">
+                                {{friend.ScreenName}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="row top-margin">
+                <div class="bot-padding col-sm-12">
+                    <p>User's email:</p>
+                    <p><input class="input-margin" type="email" ng-model="$ctrl.newInvite" /></p>
+                    <p>Give it a name:</p>
+                    <p><input class="input-margin" type="text" ng-model="$ctrl.gameName" /></p>
+                    <button type="button" class="btn btn-primary input-btn pull-right" ng-click="$ctrl.invitePlayer()">Invite!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

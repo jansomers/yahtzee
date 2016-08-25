@@ -1,0 +1,80 @@
+﻿<div class="container games-section section-padding">
+    <div class="row">
+        <div class="col-sm-4 games-sub-section">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4>History: </h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <td>Game</td>
+                            <td>Review</td>
+                            <td>Delete</td>
+                        </thead>
+                        <tbody>
+                            <tr data-ng-repeat="game in $ctrl.getHistory()">
+                                <td>{{game.GameName}}</td>
+                                <td><a href ng-click="$ctrl.loadGame(game)"><i class="mdi mdi-highlight mdi-eye"></i></a></td>
+                                <td><a href ng-click="$ctrl.deleteGame(game)"><i class="mdi mdi-danger mdi-delete-forever"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 games-sub-section">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4>Active: </h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <table class="table table-striped">
+                        <thead>
+                        <td>Game</td>
+                        <td>Load</td>
+                        <td>Delete</td>
+                        </thead>
+                        <tbody>
+                            <tr data-ng-repeat="game in $ctrl.getActiveGames()">
+                                <td>{{game.GameName}}</td>
+                                <td><a href ng-click="$ctrl.loadGame(game)"><i class="mdi mdi-highlight mdi-dice-6"></i></a></td>
+                                <td><a href ng-click="$ctrl.deleteGame(game)"><i class="mdi mdi-danger mdi-delete-forever"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 games-sub-section">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4>Invitations: </h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <td>Game</td>
+                            <td class="hide-tablet">Challenger</td>
+                        </thead>
+                        <tbody>
+                            <tr data-ng-repeat="invitation in $ctrl.getInvitationsForUser()">
+                                <td>{{invitation.GameName}}</td>
+                                <td class="hide-tablet">{{invitation.PlayerA.UserName}}</td>
+                                <td><a href ng-click="$ctrl.acceptGame(invitation)"><i class="mdi mdi-success mdi-checkbox-marked-circle-outline"></i></a></td>
+                                <td><a href ng-click="$ctrl.deleteGame(invitation)"><i class="mdi mdi-danger mdi-close-circle-outline"></i></a></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

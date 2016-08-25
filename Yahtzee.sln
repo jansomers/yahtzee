@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yahtzee", "Yahtzee\Yahtzee.csproj", "{CC62AD37-D6B8-4C9F-A6E6-D2F4670ECCEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitIntegrationTests", "Tests\UnitIntegrationTests.csproj", "{B4243954-98C9-4CE9-AEEB-E677BD391BEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalTests", "FunctionalTests\FunctionalTests.csproj", "{4C8B1BAC-CA53-46CF-AB9B-1B16392AD362}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC62AD37-D6B8-4C9F-A6E6-D2F4670ECCEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC62AD37-D6B8-4C9F-A6E6-D2F4670ECCEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC62AD37-D6B8-4C9F-A6E6-D2F4670ECCEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC62AD37-D6B8-4C9F-A6E6-D2F4670ECCEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4243954-98C9-4CE9-AEEB-E677BD391BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4243954-98C9-4CE9-AEEB-E677BD391BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4243954-98C9-4CE9-AEEB-E677BD391BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4243954-98C9-4CE9-AEEB-E677BD391BEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C8B1BAC-CA53-46CF-AB9B-1B16392AD362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C8B1BAC-CA53-46CF-AB9B-1B16392AD362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C8B1BAC-CA53-46CF-AB9B-1B16392AD362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C8B1BAC-CA53-46CF-AB9B-1B16392AD362}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

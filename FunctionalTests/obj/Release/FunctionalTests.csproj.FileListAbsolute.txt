@@ -1,0 +1,5 @@
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\FunctionalTests\bin\Release\FunctionalTests.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\FunctionalTests\bin\Release\FunctionalTests.pdb
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\FunctionalTests\obj\Release\FunctionalTests.csprojResolveAssemblyReference.cache
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\FunctionalTests\obj\Release\FunctionalTests.dll
+C:\Users\Jan\Documents\Herexamen-IP2\C#\Yahtzee\FunctionalTests\obj\Release\FunctionalTests.pdb

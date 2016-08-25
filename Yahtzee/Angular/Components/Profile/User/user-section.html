@@ -1,0 +1,28 @@
+﻿<div class="container user-section section-padding">
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>My Profile:</h3>
+            <p class="hide-tablet"> You are currently logged in as: {{$ctrl.getFullUser().userName}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 top-margin">
+            <div class="row">
+                <div class="bot-padding col-sm-12">
+                    <p> Others see you as: {{$ctrl.getFullUser().screenName}}</p>
+                    <p> Want something new? Change it! </p>
+                    <input class="input-margin" type="text" ng-model="$ctrl.newScreenName" /><button type="button" class="btn btn-primary input-btn pull-right" ng-click="$ctrl.changeScreenName()">Apply</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 top-margin">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p> Bored of your old avatar?</p>
+                    <p> Enter a 'Url' for a new one</p>
+                    <input class="input-margin" type="url" ng-model="$ctrl.newAvatar" /><button type="button" class="btn btn-primary input-btn pull-right" ng-click="$ctrl.changeAvatar()">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
