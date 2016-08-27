@@ -61,7 +61,7 @@
             if (ctrl.hasGameEnded()) {
                 return "Game has ended";
             } else {
-                return "Opponent is playing";
+                return "Not your turn";
             }
         }
     };

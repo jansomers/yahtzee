@@ -14,8 +14,6 @@ namespace Yahtzee
 {
     public class WebApiApplication : System.Web.HttpApplication
     {
-
-
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
@@ -23,9 +21,6 @@ namespace Yahtzee
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-
-
-
         }
     }
 }

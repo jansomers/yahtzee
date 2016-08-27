@@ -13,9 +13,7 @@ namespace Yahtzee
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            /** 
-                Changed the default route so I can rely on action methods in my requests.
-            */
+            
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

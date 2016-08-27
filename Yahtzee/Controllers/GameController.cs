@@ -17,23 +17,22 @@ namespace Yahtzee.Controllers
     public class GameController : ApiController
     {
         // Made public for integration testing
-        private Context _dbContext;
         private IGameManager _gameManager;
         private IUserManager _userManager;
-        private static readonly log4net.ILog logger = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly log4net.ILog Logger = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
 
         public GameController()
         {
-            _dbContext = new Context();
-            _gameManager = new GameManager(_dbContext);
-            _userManager = new UserManager(_dbContext);
+            var dbContext = new Context();
+            _gameManager = new GameManager(dbContext);
+            _userManager = new UserManager(dbContext);
 
         }
         [HttpGet]
         public ICollection<Game> ActiveGames()
         {
-            logger.Debug("Loading Active games");
+            Logger.Debug("Received request: ActiveGames for user " + HttpContext.Current.User.Identity.Name);
             ICollection<Game> myGames = new List<Game>();
 
             if (HttpContext.Current.User.Identity.Name != null)
@@ -48,7 +47,7 @@ namespace Yahtzee.Controllers
         [HttpGet]
         public ICollection<Game> Invitations()
         {
-            logger.Debug("Loading Invitations");
+            Logger.Debug("Received request: Invitations for user " + HttpContext.Current.User.Identity.Name);
             ICollection<Game> myInvitations = new List<Game>();
 
             if (HttpContext.Current.User.Identity.Name != null)
@@ -63,7 +62,7 @@ namespace Yahtzee.Controllers
         [HttpGet]
         public ICollection<Game> History()
         {
-            logger.Debug("Loading History");
+            Logger.Debug("Received request: History for user " + HttpContext.Current.User.Identity.Name);
             ICollection < Game > myHistory = new List<Game>();
 
             if (HttpContext.Current.User.Identity.Name != null)
@@ -80,79 +79,78 @@ namespace Yahtzee.Controllers
         [HttpPost]
         public Game MakeGame(string emailB, string gameName)
         {
-            logger.Debug("Making new game");
+            Logger.Debug("Received request: MakeGame for user " + HttpContext.Current.User.Identity.Name);
             User userA = _userManager.GetUserByEmail(HttpContext.Current.User.Identity.Name);
             User userB = _userManager.GetUserByEmail(emailB);
 
+            
             _userManager.AddFriend(userA, userB);
 
             return _gameManager.MakeGame(userA, userB, gameName);
 
         }
-
+        
         [HttpPost]
         public Game PostChat(int gameId, string name, string message)
         {
+            Logger.Debug("Received request: Post for user " + HttpContext.Current.User.Identity.Name + " for game: " + gameId + " with message: " + message);
             return _gameManager.PostChat(gameId, name, message);
 
         }
 
-
+        [Authorize]
         [HttpPut]
         public IHttpActionResult AcceptGame(int game)
         {
-
+            Logger.Debug("Received request: AcceptGame for game " + game);
 
             var updatedGame = _gameManager.AcceptGame(game);
-
             if (updatedGame.Status != GameStatus.AIsPlaying)
             {
                 return BadRequest();
             }
-
-
             return Ok();
         }
-
+        [Authorize]
         [HttpPut]
         public Game PutUpperResult(int key, int score, bool playerA, int gameId)
         {
+            Logger.Debug("Received request: PutUpperResult for game " + gameId);
             Game updatedGame = _gameManager.RegisterUpperResult(key, score, playerA, gameId);
-            //afzonderen
-
+            
             return updatedGame;
         }
-
+        [Authorize]
         [HttpPut]
         public Game PutLowerResult(int key, int score, bool playerA, int gameId)
         {
+            Logger.Debug("Received request: PutLowerResult for game " + gameId);
             Game updatedGame = _gameManager.RegisterLowerResult(key, score, playerA, gameId);
 
             return updatedGame;
         }
-
+        [Authorize]
         [HttpPut]
         public Game EndGame(int gameId, int scoreA, int scoreB, string winnerId)
         {
+            Logger.Debug("Received request: EndGame for game " + gameId);
             Game endedGame = _gameManager.EndGame(gameId, scoreA, scoreB, winnerId);
 
             return endedGame;
         }
-
+        [Authorize]
         [HttpDelete]
         public IHttpActionResult RemoveGame(int game)
         {
+            Logger.Debug("Received request: PutUpperResult for game " + game);
             _gameManager.RemoveGame(game);
 
             if (_gameManager.GetGame(game) == null)
             {
                 return Ok("game deleted");
             }
-
-            else
-            {
                 return Content(HttpStatusCode.InternalServerError, "Something went wrong deleting the game");
-            }
+            
         }
     }
 }

@@ -36,7 +36,7 @@ function initializeHub($rootScope) {
 
     $.connection.hub.start().fail(function (error) {
         console.log(error);
-    }).done(function () { });
+    }).done(function () { console.log("Hub started connection!")});
     $rootScope.hub = hub;
 }
 

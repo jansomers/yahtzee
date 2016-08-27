@@ -37,6 +37,17 @@
                 $rootScope.updateFullUser();
             });
     };
+
+    ctrl.updateUserGames = function() {
+        var icon = "#refresh-games-button";
+        $(icon).removeClass("mdi-refresh");
+        $(icon).addClass("mdi-autorenew");
+        $rootScope.updateUserGames();
+        setTimeout(function () {
+            $(icon).removeClass("mdi-autorenew");
+            $(icon).addClass("mdi-refresh");
+        }, 300);
+    }
 }
 
 angular.module('Yahtzee')

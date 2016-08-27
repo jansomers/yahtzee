@@ -1,5 +1,7 @@
-﻿<div class="container games-section section-padding">
+﻿<a href ng-click="$ctrl.updateUserGames()"><i id="refresh-games-button" class="mdi mdi-highlight mdi-refresh mdi-24px"></i></a>
+<div class="container games-section section-padding">
     <div class="row">
+        
         <div class="col-sm-4 games-sub-section">
             <div class="row">
                 <div class="col-sm-12">
@@ -10,16 +12,19 @@
                 <div class="col-sm-12">
                     <table class="table table-striped">
                         <thead>
-                            <td>Game</td>
-                            <td>Review</td>
-                            <td>Delete</td>
+                        <td>Game</td>
+                        <td>Load</td>
+                        <td>Delete</td>
                         </thead>
                         <tbody>
-                            <tr data-ng-repeat="game in $ctrl.getHistory()">
-                                <td>{{game.GameName}}</td>
-                                <td><a href ng-click="$ctrl.loadGame(game)"><i class="mdi mdi-highlight mdi-eye"></i></a></td>
-                                <td><a href ng-click="$ctrl.deleteGame(game)"><i class="mdi mdi-danger mdi-delete-forever"></i></a></td>
+                            <tr ng-show="$ctrl.getHistory().length < 1">
+                                <td colspan="3">Games that are finished end up in this section. <span class="hide-tablet">You can review them to check out your glorious victories!</span></td>
                             </tr>
+                        <tr data-ng-repeat="game in $ctrl.getHistory()">
+                            <td>{{game.GameName}}</td>
+                            <td><a href ng-click="$ctrl.loadGame(game)"><i class="mdi mdi-highlight mdi-eye"></i></a></td>
+                            <td><a href ng-click="$ctrl.deleteGame(game)"><i class="mdi mdi-danger mdi-delete-forever"></i></a></td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
@@ -40,11 +45,14 @@
                         <td>Delete</td>
                         </thead>
                         <tbody>
-                            <tr data-ng-repeat="game in $ctrl.getActiveGames()">
-                                <td>{{game.GameName}}</td>
-                                <td><a href ng-click="$ctrl.loadGame(game)"><i class="mdi mdi-highlight mdi-dice-6"></i></a></td>
-                                <td><a href ng-click="$ctrl.deleteGame(game)"><i class="mdi mdi-danger mdi-delete-forever"></i></a></td>
+                            <tr ng-show="$ctrl.getActiveGames().length < 1">
+                                <td colspan="3">You have no active games at the moment. <span class="hide-tablet">You can always invite someone to start a new game!</span></></td>
                             </tr>
+                        <tr data-ng-repeat="game in $ctrl.getActiveGames()">
+                            <td>{{game.GameName}}</td>
+                            <td><a href ng-click="$ctrl.loadGame(game)"><i class="mdi mdi-highlight mdi-dice-6"></i></a></td>
+                            <td><a href ng-click="$ctrl.deleteGame(game)"><i class="mdi mdi-danger mdi-delete-forever"></i></a></td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
@@ -60,17 +68,19 @@
                 <div class="col-sm-12">
                     <table class="table table-striped">
                         <thead>
-                            <td>Game</td>
-                            <td class="hide-tablet">Challenger</td>
+                        <td>Game</td>
+                        <td class="hide-tablet">Challenger</td>
                         </thead>
                         <tbody>
-                            <tr data-ng-repeat="invitation in $ctrl.getInvitationsForUser()">
-                                <td>{{invitation.GameName}}</td>
-                                <td class="hide-tablet">{{invitation.PlayerA.UserName}}</td>
-                                <td><a href ng-click="$ctrl.acceptGame(invitation)"><i class="mdi mdi-success mdi-checkbox-marked-circle-outline"></i></a></td>
-                                <td><a href ng-click="$ctrl.deleteGame(invitation)"><i class="mdi mdi-danger mdi-close-circle-outline"></i></a></td>
-                                <td></td>
-                            </tr>
+                        <tr ng-show="$ctrl.getInvitationsForUser().length < 1">
+                            <td colspan="2">No invites. <span class="hide-tablet"> Hit the the refresh button once in a while if you're expecting one!</span></td>
+                        </tr>
+                        <tr data-ng-repeat="invitation in $ctrl.getInvitationsForUser()">
+                            <td>{{invitation.GameName}}</td>
+                            <td class="hide-tablet">{{invitation.PlayerA.UserName}}</td>
+                            <td><a href ng-click="$ctrl.acceptGame(invitation)"><i class="mdi mdi-success mdi-checkbox-marked-circle-outline"></i></a></td>
+                            <td><a href ng-click="$ctrl.deleteGame(invitation)"><i class="mdi mdi-danger mdi-close-circle-outline"></i></a></td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>

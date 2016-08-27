@@ -32,11 +32,13 @@
     <register class="top-margin" ng-show="$ctrl.isSet(2)"></register>
     <login class="top-margin" ng-show="$ctrl.isSet(3)"></login>
     <profile ng-show="$ctrl.isSet(4)"></profile>
-
     <footer class="footer hide-tablet">
         <hr />
-        <p>Yahtzee project made by Jan Somers. Backend: ASP.NET and SQL server. Front-end: AngularJS, HTML CSS(Bootstrap 3 + MaterialDesignIcons) Example testing (Coded UI & CSHARP testing)</p>
+        <a href ng-click="$ctrl.hideFooter($event)">
+            <p>Yahtzee project made by Jan Somers. Backend: ASP.NET (MVC 5, EF 6, Web Api 2) Database: (SQL-Server) Front-end: (ANGULAR - HTML JS CSS3[BS3 & MDI]) Example testing: (Coded UI(Functional) & CSHARP testing(Unit-tests / Integration-tests))</p>
+        </a>
     </footer>
+
 </div>
 
 

@@ -2,14 +2,24 @@
     <div class="row">
         <div class="col-sm-6">
             <ul class="nav navbar-nav nav-pills pull-left">
-                <li ng-class="{ active : $ctrl.isUserSectionShown}"><a class="navbar-link" href ng-click="$ctrl.isUserSectionShown = !$ctrl.isUserSectionShown"><i class="mdi mdi-24px mdi-account-box-outline"/></a></li>
-                <li ng-class="{ active : $ctrl.isPlaySectionShown}"><a class="navbar-link" href ng-click="$ctrl.isPlaySectionShown = !$ctrl.isPlaySectionShown"><i class="mdi mdi-24px mdi-new-box"/></a></li>
+                <li ng-class="{ active : $ctrl.isUserSectionShown}"><a class="navbar-link" href ng-click="$ctrl.isUserSectionShown = !$ctrl.isUserSectionShown"><i class="mdi mdi-24px mdi-account-box-outline" /></a></li>
+                <li ng-class="{ active : $ctrl.isPlaySectionShown}"><a class="navbar-link" href ng-click="$ctrl.isPlaySectionShown = !$ctrl.isPlaySectionShown"><i class="mdi mdi-24px mdi-new-box" /></a></li>
                 <li ng-class="{ active : $ctrl.isGamesSectionShown}"><a class="navbar-link" href ng-click="$ctrl.isGamesSectionShown = !$ctrl.isGamesSectionShown"><i class="mdi mdi-24px mdi-view-list"></i></a></li>
                 <li ng-class="{ active :  $ctrl.isLoadedSectionShown}"><a class="navbar-link" href ng-click="$ctrl.isLoadedSectionShown = !$ctrl.isLoadedSectionShown"><i class="mdi mdi-24px mdi-gamepad-variant"></i></a></li>
             </ul>
         </div>
         <div class="col-sm-6 pull-right">
-            <p id="logas" class="nav-padding pull-right"><span class="stats">Hi {{$ctrl.getFullUser().screenName}}</span> <span class="stats">#Wins: {{$ctrl.wonGames()}}</span> <span class="stats">Best score: {{$ctrl.bestScore()}}</span> <span class="stats">Average: {{$ctrl.avgScore()}}</span></p>
+            <p class="hide-480 stats-box pull-right">
+                <span class="stats mdi-success mdi-18px">
+                    <i data-toggle="tooltip" title="Won games" class="mdi stats mdi-trophy mdi-success mdi-24px"></i> {{$ctrl.wonGames()}}
+                </span>
+                <span class="stats mdi-stats mdi-18px">
+                    <i data-toggle="tooltip" title="Best score" class="mdi stats mdi-stats mdi-24px mdi-crown"></i>{{$ctrl.bestScore()}}
+                </span>
+                <span class="stats mdi-stats mdi-18px">
+                    <i data-toggle="tooltip" title="Average score" class="mdi stats mdi-24px mdi-stats mdi-chart-bar"></i> {{$ctrl.avgScore()}}
+                </span>
+            </p>
         </div>
     </div>
 </div>

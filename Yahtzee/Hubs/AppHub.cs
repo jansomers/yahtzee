@@ -13,10 +13,6 @@ namespace Yahtzee.Hubs
         {
             Clients.All.GameChange(id);
         }
-
-        public void Announce()
-        {
-           
-        }
+      
     }
 }

@@ -9,8 +9,6 @@ namespace Yahtzee.DAL
     {
         
         public DbSet<Game> Games { get; set; }
-       
-
         public DbSet<GameResult> GameResults { get; set; }
         public Context() : base("name=DefaultConnection", throwIfV1Schema: false)
         {

@@ -1,16 +1,19 @@
 ﻿<div class="container loaded-section section-padding">
-    <h4>
-        <span id="game-name">{{$ctrl.getLoadedGame().GameName}}</span> 
-        <span ng-if="!$ctrl.hasGameEnded()">
-            <span ng-if="$ctrl.isPlaying()"> Your turn </span> 
-            <span ng-if="!$ctrl.isPlaying()">Opponent's turn</span>
-        </span>
-    </h4>
     <h3 ng-if="$ctrl.getLoadedGame().WinnerId != null">Winner : {{$ctrl.getWinner()}}</h3>
-    <div class="row">
-        <div class="col-sm-7 col-top-margin">
+    <div class="row top-margin">
+        <div class="col-sm-7">
             <div class="row">
-                <div id="dice-div" class="col-sm-12 col-left-padding">
+                <h4 class="text-center" ng-if="!$ctrl.hasGameEnded()">
+                        <span ng-if="$ctrl.isPlaying()"> Your turn </span>
+                        <span ng-if="!$ctrl.isPlaying()">Opponent's turn</span>
+                        </>
+                  
+                </h4>
+            </div>
+
+
+            <div class="row">
+                <div id="dice-div" class="col-sm-12 col-top-margin col-left-padding">
                     <div class="die" ng-class="$ctrl.dice.die1.cssClass" ng-click="$ctrl.toggleDie($event, 1)"> <span class="dot" ng-if="$ctrl.dice.die1.cssClass != null"></span></div>
                     <div class="die" ng-class="$ctrl.dice.die2.cssClass" ng-click="$ctrl.toggleDie($event, 2)"> <span class="dot" ng-show="$ctrl.dice.die2.cssClass != null"></span></div>
                     <div class="die" ng-class="$ctrl.dice.die3.cssClass" ng-click="$ctrl.toggleDie($event, 3)"><span class="dot" ng-show="$ctrl.dice.die3.cssClass != null"></span></div>
@@ -70,7 +73,10 @@
         </div>
         <div class="col-sm-5">
             <div class="row">
-                <div class="col-sm-12">
+                <h4 class="text-center">{{$ctrl.getLoadedGame().GameName}}</h4>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-top-margin">
                     <table class="table  table-score table-condensed">
                         <tr>
                             <th class="game-result-headers align-left">Description</th>

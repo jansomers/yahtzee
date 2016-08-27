@@ -30,6 +30,11 @@
         console.log("Logged out: " + ctrl.isLoggedin());
         loginService.logout();
     };
+
+    ctrl.hideFooter = function($event) {
+        $($event.currentTarget).addClass("no-display");
+        window.open("https://github.com/jansomers/yahtzee");
+    };
     /**
      * Setting tab to homepage
      */

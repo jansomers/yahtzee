@@ -39,7 +39,9 @@
 
 };
 
-
+$(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+});
 
 angular.module('Yahtzee').component('profile', {
 

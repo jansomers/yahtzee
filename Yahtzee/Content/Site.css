@@ -17,7 +17,7 @@
 
 @media (max-width: 768px) 
 {
-    .hide-tablet, #logas, .yahtzee-logo {
+    .hide-tablet, .yahtzee-logo {
         display: none;
     }
 
@@ -39,6 +39,10 @@
 }
 
 @media (max-width: 480px) {
+
+    .hide-480 {
+        display: none;
+    }
     
     .btn-roll {
         width: 200px !important;
@@ -57,6 +61,8 @@
      .game-result-headers {
          font-size: 12px !important;
      }
+
+     
      
 }
 
@@ -72,8 +78,13 @@ body {
 }
 
 .footer {
-    position: absolute;
-    bottom: 0
+    
+    position: static;
+    bottom: 10px;
+}
+
+.no-display {
+    display: none;
 }
 
 .yahtzee-logo {
@@ -131,6 +142,11 @@ textarea {
     max-width: 280px;
 }
 
+.text-center{
+    text-align: center;
+   
+}
+
 a {
     color: black;
     text-decoration: none !important;
@@ -158,6 +174,7 @@ a :hover {
 .stats {
     padding-right: 2px !important;
     padding-left: 2px !important;
+    margin: 2px !important;
 }
 
 .sign-section {
@@ -213,6 +230,11 @@ a :hover {
     color: #D32F2F;
 }
 
+.loaded-section h4 {
+    font-size: 1.5em;
+   
+}
+
 .home-section h1, .home-section h2 , .home-section h3, .home-section h4, .home-section h5 {
     color: #D32F2F;
    
@@ -247,6 +269,10 @@ a :hover {
 
 .mdi-highlight {
     color: #FF5722;
+}
+
+.mdi-stats {
+    color: #80d32f2f;
 }
 
 .die.one .dot { 
@@ -381,7 +407,16 @@ td, th {
     text-align: left;
     padding-left: 15px !important;
 }
-
+.stats-box {
+    cursor: default;
+    position: relative;
+    margin-top: 10px !important;
+    padding: 5px !important;
+    vertical-align: middle !important;
+    color: #dd4b39;
+   
+    
+}
 .box {
     position: relative;
     border-radius: 3px;

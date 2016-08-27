@@ -13,7 +13,7 @@ namespace Yahtzee.Controllers
         private static readonly log4net.ILog logger = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            ViewBag.Title = "Yahtzee";
             logger.Debug("Index page accessed");
             return View();
         }

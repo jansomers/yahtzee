@@ -1,4 +1,4 @@
-﻿function LoginController(loginService, userService, $rootScope) {
+﻿function LoginController(loginService, userService, $rootScope, $window) {
     var ctrl = this;
 
     ctrl.Reset = function () {
@@ -26,11 +26,7 @@
             sessionStorage.setItem('refreshToken', resp.data.refresh_token);
             console.log("Authentication information stored");
             console.log("Login Success");
-
-            location.reload();
-            setTimeout(function () {
-                $rootScope.updateFullUser();
-            }, 2000);
+            $window.location.reload();
 
         }, function (err) {
             console.log("Login Error");
