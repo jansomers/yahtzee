@@ -1,5 +1,6 @@
 # yahtzee
 Opdracht IntegratieProject 2 IAO ISM
-Tweede zit
+Karel de Grote Hogeschool Toegepaste Informatica
 
+Tweede zit
 Jan Somers
