@@ -87,32 +87,32 @@
                             <th class="game-result-headers tr-half align-left" colspan="3">Upper Half</th>
                         </tr>
                         <tr>
-                            <td class="align-left"><a ng-click="$ctrl.updateUpperScore(1)">Ones <i class="mdi mdi-dice-1"></i></a></td>
+                            <td  data-toggle="tooltip" title="Sum of all ones" class="align-left"><a ng-click="$ctrl.updateUpperScore(1)">Ones <i class="mdi mdi-dice-1"></i></a></td>
                             <td><a ng-click="$ctrl.updateUpperScore(1)">{{$ctrl.getLoadedGame().GameResultA.Ones}}</a></td>
                             <td><a ng-click="$ctrl.updateUpperScore(1)">{{$ctrl.getLoadedGame().GameResultB.Ones}}</a></td>
                         </tr>
                         <tr>
-                            <td class="align-left"><a ng-click="$ctrl.updateUpperScore(2)">Twos <i class="mdi mdi-dice-2"></i></a></td>
+                            <td  data-toggle="tooltip" title="Sum of all twos" class="align-left"><a ng-click="$ctrl.updateUpperScore(2)">Twos <i class="mdi mdi-dice-2"></i></a></td>
                             <td> <a ng-click="$ctrl.updateUpperScore(2)">{{$ctrl.getLoadedGame().GameResultA.Twos}}</a></td>
                             <td> <a ng-click="$ctrl.updateUpperScore(2)">{{$ctrl.getLoadedGame().GameResultB.Twos}}</a></td>
                         </tr>
                         <tr>
-                            <td class="align-left"><a ng-click="$ctrl.updateUpperScore(3)">Threes <i class="mdi mdi-dice-3"></i></a></td>
+                            <td data-toggle="tooltip" title="Sum of all threes" class="align-left"><a ng-click="$ctrl.updateUpperScore(3)">Threes <i class="mdi mdi-dice-3"></i></a></td>
                             <td><a ng-click="$ctrl.updateUpperScore(3)">{{$ctrl.getLoadedGame().GameResultA.Threes}}</a></td>
                             <td><a ng-click="$ctrl.updateUpperScore(3)">{{$ctrl.getLoadedGame().GameResultB.Threes}}</a></td>
                         </tr>
                         <tr>
-                            <td class="align-left"><a ng-click="$ctrl.updateUpperScore(4)">Fours <i class="mdi mdi-dice-4"></i></a></td>
+                            <td data-toggle="tooltip" title="Sum of all fours" class="align-left"><a ng-click="$ctrl.updateUpperScore(4)">Fours <i class="mdi mdi-dice-4"></i></a></td>
                             <td><a ng-click="$ctrl.updateUpperScore(4)">{{$ctrl.getLoadedGame().GameResultA.Fours}}</a></td>
                             <td><a ng-click="$ctrl.updateUpperScore(4)">{{$ctrl.getLoadedGame().GameResultB.Fours}}</a></td>
                         </tr>
                         <tr>
-                            <td class="align-left"><a ng-click="$ctrl.updateUpperScore(5)">Fives <i class="mdi mdi-dice-5"></i></a></td>
+                            <td data-toggle="tooltip" title="Sum of all fives" class="align-left"><a ng-click="$ctrl.updateUpperScore(5)">Fives <i class="mdi mdi-dice-5"></i></a></td>
                             <td><a ng-click="$ctrl.updateUpperScore(5)">{{$ctrl.getLoadedGame().GameResultA.Fives}}</a></td>
                             <td><a ng-click="$ctrl.updateUpperScore(5)">{{$ctrl.getLoadedGame().GameResultB.Fives}}</a></td>
                         </tr>
                         <tr>
-                            <td class="align-left"><a ng-click="$ctrl.updateUpperScore(6)">Sixes <i class="mdi mdi-dice-6"></i></a></td>
+                            <td  data-toggle="tooltip" title="Sum of all sixes" class="align-left"><a ng-click="$ctrl.updateUpperScore(6)">Sixes <i class="mdi mdi-dice-6"></i></a></td>
                             <td><a ng-click="$ctrl.updateUpperScore(6)">{{$ctrl.getLoadedGame().GameResultA.Sixes}}</a></td>
                             <td><a ng-click="$ctrl.updateUpperScore(6)">{{$ctrl.getLoadedGame().GameResultB.Sixes}}</a></td>
                         </tr>
@@ -135,37 +135,37 @@
                             <th colspan="3" class="game-result-headers tr-half align-left">Lower half</th>
                         </tr>
                         <tr>
-                            <td class="align-left"><a ng-click="$ctrl.updateLowerScore(1)">3 of a kind</a></td>
+                            <td  data-toggle="tooltip" title="Sum of all dice if you have at least three of a kind" class="align-left"><a ng-click="$ctrl.updateLowerScore(1)">3 of a kind</a></td>
                             <td><a ng-click="$ctrl.updateLowerScore(1)">{{$ctrl.getLoadedGame().GameResultA.Tok}}</a></td>
                             <td><a ng-click="$ctrl.updateLowerScore(1)">{{$ctrl.getLoadedGame().GameResultB.Tok}}</a></td>
                         </tr>
                         <tr>
-                            <td class="align-left"><a ng-click="$ctrl.updateLowerScore(2)">4 of a kind</a></td>
+                            <td  data-toggle="tooltip" title="Sum of all dice if you have at least three of the same" class="align-left"><a ng-click="$ctrl.updateLowerScore(2)">4 of a kind</a></td>
                             <td><a ng-click="$ctrl.updateLowerScore(2)">{{$ctrl.getLoadedGame().GameResultA.Fok}}</a></td>
                             <td><a ng-click="$ctrl.updateLowerScore(2)">{{$ctrl.getLoadedGame().GameResultB.Fok}}</a></td>
                         </tr>
                         <tr>
-                            <td class="align-left"><a ng-click="$ctrl.updateLowerScore(3)">Full House</a></td>
+                            <td data-toggle="tooltip" title="Score 25 points if you have 2 of a kind and 3 of a kind together (e.g: 4 4 2 2 2)"  class="align-left"><a ng-click="$ctrl.updateLowerScore(3)">Full House</a></td>
                             <td><a ng-click="$ctrl.updateLowerScore(3)">{{$ctrl.getLoadedGame().GameResultA.Fh}}</a></td>
                             <td><a ng-click="$ctrl.updateLowerScore(3)">{{$ctrl.getLoadedGame().GameResultB.Fh}}</a></td>
                         </tr>
                         <tr>
-                            <td class="align-left"><a ng-click="$ctrl.updateLowerScore(4)">Sm. Straight</a></td>
+                            <td data-toggle="tooltip" title="Score 30 points if you have at least 4 in a row" class="align-left"><a ng-click="$ctrl.updateLowerScore(4)">Sm. Straight</a></td>
                             <td><a ng-click="$ctrl.updateLowerScore(4)">{{$ctrl.getLoadedGame().GameResultA.SmStr}}</a></td>
                             <td><a ng-click="$ctrl.updateLowerScore(4)">{{$ctrl.getLoadedGame().GameResultB.SmStr}}</a></td>
                         </tr>
                         <tr>
-                            <td class="align-left"><a ng-click="$ctrl.updateLowerScore(5)">La. Straight</a></td>
+                            <td data-toggle="tooltip" title="Score 40 points if you have 5 in a row" class="align-left"><a ng-click="$ctrl.updateLowerScore(5)">La. Straight</a></td>
                             <td><a ng-click="$ctrl.updateLowerScore(5)">{{$ctrl.getLoadedGame().GameResultA.LaStr}}</a></td>
                             <td><a ng-click="$ctrl.updateLowerScore(5)">{{$ctrl.getLoadedGame().GameResultB.LaStr}}</a></td>
                         </tr>
                         <tr>
-                            <td class="align-left"><a ng-click="$ctrl.updateLowerScore(6)">Yahtzee!</a></td>
+                            <td data-toggle="tooltip" title="Score 50 points if all dice are the same number" class="align-left"><a ng-click="$ctrl.updateLowerScore(6)">Yahtzee!</a></td>
                             <td><a ng-click="$ctrl.updateLowerScore(6)">{{$ctrl.getLoadedGame().GameResultA.Yahtzee}}</a></td>
                             <td><a ng-click="$ctrl.updateLowerScore(6)">{{$ctrl.getLoadedGame().GameResultB.Yahtzee}}</a></td>
                         </tr>
                         <tr>
-                            <td class="align-left"><a ng-click="$ctrl.updateLowerScore(7)">Chance</a></td>
+                            <td data-toggle="tooltip" title="Sum of all dice! When the dice don't roll your way ;)'" class="align-left"><a ng-click="$ctrl.updateLowerScore(7)">Chance</a></td>
                             <td><a ng-click="$ctrl.updateLowerScore(7)">{{$ctrl.getLoadedGame().GameResultA.Chance}}</a></td>
                             <td><a ng-click="$ctrl.updateLowerScore(7)">{{$ctrl.getLoadedGame().GameResultB.Chance}}</a></td>
                         </tr>

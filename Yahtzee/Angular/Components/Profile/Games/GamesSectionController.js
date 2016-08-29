@@ -50,6 +50,8 @@
     }
 }
 
+
+
 angular.module('Yahtzee')
     .component('gamesSection',
         {

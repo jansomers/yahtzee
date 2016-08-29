@@ -1,5 +1,15 @@
 ﻿angular.module("Yahtzee").service('gameService', function ($http) {
 
+    this.get = function(id) {
+        console.log("Forwarding Get Request to GameController");
+        var resp = $http({
+            url: "/api/Game/GetGame",
+            method: "GET",
+            params: { id: id }
+        });
+        return resp;
+    };
+
     this.makeGame = function (email, name) {
         console.log("Forwarding MakeGame Request to GameController");
         console.log("with params:\ninvited user :" + email + " name: " + name);

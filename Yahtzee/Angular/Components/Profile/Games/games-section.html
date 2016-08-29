@@ -17,9 +17,9 @@
                         <td>Delete</td>
                         </thead>
                         <tbody>
-                            <tr ng-show="$ctrl.getHistory().length < 1">
-                                <td colspan="3">Games that are finished end up in this section. <span class="hide-tablet">You can review them to check out your glorious victories!</span></td>
-                            </tr>
+                        <tr ng-show="$ctrl.getHistory().length < 1">
+                            <td colspan="3">Games that are finished end up in this section. <span class="hide-tablet">You can review them to check out your glorious victories!</span></td>
+                        </tr>
                         <tr data-ng-repeat="game in $ctrl.getHistory()">
                             <td>{{game.GameName}}</td>
                             <td><a href ng-click="$ctrl.loadGame(game)"><i class="mdi mdi-highlight mdi-eye"></i></a></td>

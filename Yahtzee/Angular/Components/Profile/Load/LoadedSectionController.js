@@ -288,7 +288,6 @@
             .then(function (data) {
                 console.log("Game successfully ended: reloading loaded game and updating usergames " + ctrl.getLoadedGame().GaneName);
                 $rootScope.loadedGame = data.data;
-                $rootScope.updateUserGames();
                 $rootScope.hub.invoke("GameChange", ctrl.getLoadedGame().Id);
             });
     };
@@ -298,10 +297,14 @@
             console.log("Successfully submitted upper score. Resetting turn and dice");
             ctrl.resetTurn();
             ctrl.resetDice();
+            $rootScope.loadedGame = data.data;
+            
             if (ctrl.hasGameEnded()) {
+                console.log("Game has ended, ending the game");
                 ctrl.endGame();
+
             } else {
-                $rootScope.loadedGame = data.data;
+                console.log("Game has not ended yet");
                 $rootScope.updateUserGames();
                 $rootScope.hub.invoke("GameChange", ctrl.getLoadedGame().Id);
             }
@@ -314,10 +317,11 @@
                 console.log("Succesfully submitted lower score.Resetting turn and dice");
                 ctrl.resetTurn();
                 ctrl.resetDice();
+                $rootScope.loadedGame = data.data;
+                
                 if (ctrl.hasGameEnded()) {
                     ctrl.endGame();
                 } else {
-                    $rootScope.loadedGame = data.data;
                     $rootScope.updateUserGames();
                     $rootScope.hub.invoke("GameChange", ctrl.getLoadedGame().Id);
                 }
@@ -615,20 +619,39 @@
             }
         }
     };
+   
+    ctrl.tempAlert = function(msg, duration) {
+        var el = document.createElement("div");
+        el.setAttribute("style", "position:absolute;top:40%;left:20%;background-color:white;");
+        el.innerHTML = msg;
+        setTimeout(function() {
+                el.parentNode.removeChild(el);
+            },
+            duration);
+        document.body.appendChild(el);
+    };
     /**
-     * Listener to listen for gameChanges. If your loaded game has been updated, then the active game list gets refreshed and loadedGame gets set to the updated version.
-     */
+    * Listener to listen for gameChanges. If your loaded game has been updated, then the active game list gets refreshed and loadedGame gets set to the updated version.
+    */
     var listener = $rootScope.$on("GameChange",
     function (ev, id) {
         console.log("Pushing game: " + id);
         if (ctrl.getLoadedGame().Id === id) {
+            var clonedGame = $rootScope.loadedGame;
+            var winner = ctrl.getWinner();
             gameService.active()
                 .success(function (data) {
                     console.log("Active games refreshed, Updating loadedGame");
                     $rootScope.loadedGame = data.filter(function (obj) {
+                        console.log("Refreshed loaded game");
                         return obj.Id == id;
                     })[0];
+                    if ($rootScope.loadedGame == null) {
+                        alert(clonedGame.GameName + " has ended!\n" + winner + " wins!");
+                        $rootScope.updateUserGames();
+                    }
                 });
+          
 
         }
     });

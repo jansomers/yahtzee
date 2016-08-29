@@ -29,6 +29,12 @@ namespace Yahtzee.Controllers
             _userManager = new UserManager(dbContext);
 
         }
+
+        [HttpGet]
+        public Game GetGame(int id)
+        {
+            return _gameManager.GetGame(id);
+        }
         [HttpGet]
         public ICollection<Game> ActiveGames()
         {
