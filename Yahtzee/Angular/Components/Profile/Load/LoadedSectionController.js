@@ -11,6 +11,10 @@
     ctrl.getLoadedGame = function () {
         return $rootScope.loadedGame;
     };
+
+    ctrl.resetMessage = function() {
+        ctrl.newMessage = null;
+    }
     ctrl.sendMessage = function () {
         console.log("User tries to send a message");
         if (ctrl.newMessage !== "" && (ctrl.getLoadedGame().Status === 3 || ctrl.getLoadedGame().Status === 4)) {
@@ -21,6 +25,7 @@
             console.log("User has rights to senda message");
             chatService.postMessage(ctrl.getLoadedGame(), ctrl.getFullUser(), ctrl.newMessage)
                 .then(function (data) {
+                    ctrl.resetMessage();
                     console.log("Message succesfully posted, reloading loaded game for both players" + data.data);
                     $rootScope.loadedGame = data.data;
                     $rootScope.hub.invoke("GameChange", ctrl.getLoadedGame().Id);
@@ -56,7 +61,11 @@
      */
     ctrl.getDiceText = function () {
         if (ctrl.isPlaying()) {
-            return "Roll the dice!";
+            if (ctrl.currentTurn === 3) {
+                return "No more rolls";
+            } else {
+                return "Roll the dice!";
+            }
         } else {
             if (ctrl.hasGameEnded()) {
                 return "Game has ended";
@@ -529,10 +538,10 @@
         var result = 0;
         switch (key) {
             case 1:
-                result = ctrl.containsAtLeast(diceSet, 3) ? diceSet.reduce((pv, cv) => pv + cv, 0) + 1 : 0;
+                result = ctrl.containsAtLeast(diceSet, 3) ? diceSet.reduce((pv, cv) => pv + cv, 0) : 0;
                 break;
             case 2:
-                result = ctrl.containsAtLeast(diceSet, 4) ? diceSet.reduce((pv, cv) => pv + cv, 0) + 1 : 0;
+                result = ctrl.containsAtLeast(diceSet, 4) ? diceSet.reduce((pv, cv) => pv + cv, 0) : 0;
                 break;
             case 3:
                 result = ctrl.isFullHouse(diceSet) ? 25 : 0;
@@ -619,17 +628,6 @@
             }
         }
     };
-   
-    ctrl.tempAlert = function(msg, duration) {
-        var el = document.createElement("div");
-        el.setAttribute("style", "position:absolute;top:40%;left:20%;background-color:white;");
-        el.innerHTML = msg;
-        setTimeout(function() {
-                el.parentNode.removeChild(el);
-            },
-            duration);
-        document.body.appendChild(el);
-    };
     /**
     * Listener to listen for gameChanges. If your loaded game has been updated, then the active game list gets refreshed and loadedGame gets set to the updated version.
     */
@@ -648,7 +646,7 @@
                     })[0];
                     if ($rootScope.loadedGame == null) {
                         alert(clonedGame.GameName + " has ended!\n" + winner + " wins!");
-                        $rootScope.updateUserGames();
+                        $rootScope.updateFullUser();
                     }
                 });
           

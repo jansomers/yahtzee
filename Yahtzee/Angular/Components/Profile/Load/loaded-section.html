@@ -4,10 +4,10 @@
         <div class="col-sm-7">
             <div class="row">
                 <h4 class="text-center" ng-if="!$ctrl.hasGameEnded()">
-                        <span ng-if="$ctrl.isPlaying()"> Your turn </span>
-                        <span ng-if="!$ctrl.isPlaying()">Opponent's turn</span>
-                        </>
-                  
+                    <span ng-if="$ctrl.isPlaying()"> Your turn </span>
+                    <span ng-if="!$ctrl.isPlaying()">Opponent's turn</span>
+                    </>
+
                 </h4>
             </div>
 
@@ -35,39 +35,29 @@
                         <div class="box-header with-border">
                             <h4 class="box-title">Chat <span ng-if="!($ctrl.getLoadedGame().Status === 3 || $ctrl.getLoadedGame().Status === 4)"> Closed </span></h4>
                         </div>
-                        <!-- /.box-header -->
                         <div class="box-body">
-                            <!-- Conversations are loaded here -->
                             <div class="direct-chat-messages">
-                                <!-- Message. Default to the left -->
                                 <div class="direct-chat-msg" ng-repeat="msg in $ctrl.getLoadedGame().ChatMessages">
                                     <div class="direct-chat-info clearfix">
                                         <span class="direct-chat-name pull-left">{{msg.ScreenName}}</span>
                                     </div>
-                                    <!-- /.direct-chat-info -->
                                     <div class="direct-chat-text">
                                         {{msg.Message}}
                                     </div>
-                                    <!-- /.direct-chat-text -->
                                 </div>
-
-                                <!-- /.direct-chat-pane -->
                             </div>
-                            <!-- /.box-body -->
                             <div class="box-footer" ng-if="$ctrl.getLoadedGame().Status === 3 || $ctrl.getLoadedGame().Status === 4">
                                 <form>
                                     <div class="input-group">
-                                        <input type="text" name="message" ng-model="$ctrl.newMessage" placeholder="Type Message ..." class="form-control">
+                                        <input type="text" name="message" autocomplete="off" ng-model="$ctrl.newMessage" placeholder="Type Message ..." class="form-control">
                                         <span class="input-group-btn">
                                             <button ng-click="$ctrl.sendMessage()" class="btn btn-primary btn-flat">Send</button>
                                         </span>
                                     </div>
                                 </form>
                             </div>
-                            <!-- /.box-footer-->
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -87,12 +77,12 @@
                             <th class="game-result-headers tr-half align-left" colspan="3">Upper Half</th>
                         </tr>
                         <tr>
-                            <td  data-toggle="tooltip" title="Sum of all ones" class="align-left"><a ng-click="$ctrl.updateUpperScore(1)">Ones <i class="mdi mdi-dice-1"></i></a></td>
+                            <td data-toggle="tooltip" title="Sum of all ones" class="align-left"><a ng-click="$ctrl.updateUpperScore(1)">Ones <i class="mdi mdi-dice-1"></i></a></td>
                             <td><a ng-click="$ctrl.updateUpperScore(1)">{{$ctrl.getLoadedGame().GameResultA.Ones}}</a></td>
                             <td><a ng-click="$ctrl.updateUpperScore(1)">{{$ctrl.getLoadedGame().GameResultB.Ones}}</a></td>
                         </tr>
                         <tr>
-                            <td  data-toggle="tooltip" title="Sum of all twos" class="align-left"><a ng-click="$ctrl.updateUpperScore(2)">Twos <i class="mdi mdi-dice-2"></i></a></td>
+                            <td data-toggle="tooltip" title="Sum of all twos" class="align-left"><a ng-click="$ctrl.updateUpperScore(2)">Twos <i class="mdi mdi-dice-2"></i></a></td>
                             <td> <a ng-click="$ctrl.updateUpperScore(2)">{{$ctrl.getLoadedGame().GameResultA.Twos}}</a></td>
                             <td> <a ng-click="$ctrl.updateUpperScore(2)">{{$ctrl.getLoadedGame().GameResultB.Twos}}</a></td>
                         </tr>
@@ -112,7 +102,7 @@
                             <td><a ng-click="$ctrl.updateUpperScore(5)">{{$ctrl.getLoadedGame().GameResultB.Fives}}</a></td>
                         </tr>
                         <tr>
-                            <td  data-toggle="tooltip" title="Sum of all sixes" class="align-left"><a ng-click="$ctrl.updateUpperScore(6)">Sixes <i class="mdi mdi-dice-6"></i></a></td>
+                            <td data-toggle="tooltip" title="Sum of all sixes" class="align-left"><a ng-click="$ctrl.updateUpperScore(6)">Sixes <i class="mdi mdi-dice-6"></i></a></td>
                             <td><a ng-click="$ctrl.updateUpperScore(6)">{{$ctrl.getLoadedGame().GameResultA.Sixes}}</a></td>
                             <td><a ng-click="$ctrl.updateUpperScore(6)">{{$ctrl.getLoadedGame().GameResultB.Sixes}}</a></td>
                         </tr>
@@ -135,17 +125,17 @@
                             <th colspan="3" class="game-result-headers tr-half align-left">Lower half</th>
                         </tr>
                         <tr>
-                            <td  data-toggle="tooltip" title="Sum of all dice if you have at least three of a kind" class="align-left"><a ng-click="$ctrl.updateLowerScore(1)">3 of a kind</a></td>
+                            <td data-toggle="tooltip" title="Sum of all dice if you have at least three of a kind" class="align-left"><a ng-click="$ctrl.updateLowerScore(1)">3 of a kind</a></td>
                             <td><a ng-click="$ctrl.updateLowerScore(1)">{{$ctrl.getLoadedGame().GameResultA.Tok}}</a></td>
                             <td><a ng-click="$ctrl.updateLowerScore(1)">{{$ctrl.getLoadedGame().GameResultB.Tok}}</a></td>
                         </tr>
                         <tr>
-                            <td  data-toggle="tooltip" title="Sum of all dice if you have at least three of the same" class="align-left"><a ng-click="$ctrl.updateLowerScore(2)">4 of a kind</a></td>
+                            <td data-toggle="tooltip" title="Sum of all dice if you have at least three of the same" class="align-left"><a ng-click="$ctrl.updateLowerScore(2)">4 of a kind</a></td>
                             <td><a ng-click="$ctrl.updateLowerScore(2)">{{$ctrl.getLoadedGame().GameResultA.Fok}}</a></td>
                             <td><a ng-click="$ctrl.updateLowerScore(2)">{{$ctrl.getLoadedGame().GameResultB.Fok}}</a></td>
                         </tr>
                         <tr>
-                            <td data-toggle="tooltip" title="Score 25 points if you have 2 of a kind and 3 of a kind together (e.g: 4 4 2 2 2)"  class="align-left"><a ng-click="$ctrl.updateLowerScore(3)">Full House</a></td>
+                            <td data-toggle="tooltip" title="Score 25 points if you have 2 of a kind and 3 of a kind together (e.g: 4 4 2 2 2)" class="align-left"><a ng-click="$ctrl.updateLowerScore(3)">Full House</a></td>
                             <td><a ng-click="$ctrl.updateLowerScore(3)">{{$ctrl.getLoadedGame().GameResultA.Fh}}</a></td>
                             <td><a ng-click="$ctrl.updateLowerScore(3)">{{$ctrl.getLoadedGame().GameResultB.Fh}}</a></td>
                         </tr>
